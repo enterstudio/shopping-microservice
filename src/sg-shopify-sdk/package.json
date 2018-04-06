@@ -1,0 +1,19 @@
+{
+  "name": "sg-shopify-sdk",
+  "version": "1.0.0",
+  "description": "This is the sdk to use shopify for managing products",
+  "main": "lib/shopify.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "shopify",
+    "microservices",
+    "sdk"
+  ],
+  "author": "smaheshw@visa.com",
+  "dependencies": {
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
+  }
+}

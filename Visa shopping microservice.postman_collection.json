@@ -1,0 +1,1379 @@
+{
+	"id": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+	"name": "Visa shopping microservice",
+	"description": "",
+	"order": [
+		"7020c612-6ef5-384b-35dd-95c4d9ac6e3b"
+	],
+	"folders": [
+		{
+			"id": "983d651a-c736-bf09-a75a-4ede6e7ae14d",
+			"name": "Carts",
+			"description": "",
+			"order": [
+				"bc3f8540-de44-f852-7f40-5b68a9819e2f",
+				"6474fa9a-445f-c2b0-8585-59a411214cba",
+				"9d3d0ab5-4953-4c65-e275-c7717dc31e33",
+				"7c5c3446-3de2-8fec-5b8e-904478ec27d6",
+				"7315e363-b53f-5412-befa-fe2b4c05838a"
+			],
+			"owner": "892326"
+		},
+		{
+			"id": "c4bceaf4-b78d-f934-31a1-d4d671efebd3",
+			"name": "Odata",
+			"description": "",
+			"order": [
+				"5cce554b-a7ad-1f72-f57c-46b4e55f1e96",
+				"28936910-0526-c5c0-f581-60bad90f888c",
+				"12c00ba9-a48b-aa0f-219b-7f0586627d81",
+				"d5d9fb46-baed-8eae-1603-0190ce2549a5",
+				"cd31b3a2-0bd7-4cfc-d1e1-0860b656a8ed",
+				"26de773d-7ef1-3a91-7fd8-6fad7abd580d",
+				"c3acf071-86f2-6027-24ac-05e2fcc1f23d",
+				"fc5417e4-7c46-9e2a-4178-950fb32d6fd7",
+				"acb0de60-7743-5345-c01e-f9153f866d75",
+				"cc8ec3f3-458d-21aa-133d-63a1bcde3927",
+				"c1397b27-94b9-8574-4105-59ff06c21508"
+			],
+			"owner": "892326",
+			"collectionId": "de47b62b-3372-9edb-1ad6-ca4596630163"
+		},
+		{
+			"id": "9f304423-a21f-df0e-bf5e-f898b22d898b",
+			"name": "Orders",
+			"description": "",
+			"order": [
+				"5be7a927-6e4d-203e-7876-34e7e32c987d",
+				"6e1b755d-3ad9-2945-6896-73f393a4c07c",
+				"a13d904b-e008-06e5-1576-157792416a2d",
+				"dc6a2cf4-dfb4-b73c-2ea5-b7548f7b9de0"
+			],
+			"owner": "892326"
+		},
+		{
+			"id": "faf4ff70-f108-527a-61ff-7e2f809019cd",
+			"name": "Products",
+			"description": "",
+			"order": [
+				"77c26bc0-2a2a-4f04-15f7-326469f54922",
+				"603b58ea-0e06-5a59-afbc-60d5156d2fd7",
+				"68c2011f-ad2a-e4c3-a98c-db7fc1acc925"
+			],
+			"owner": "892326",
+			"collectionId": "de47b62b-3372-9edb-1ad6-ca4596630163"
+		},
+		{
+			"id": "ee296c06-be20-29fc-4baf-b0a4038682e6",
+			"name": "Webhooks",
+			"description": "",
+			"order": [
+				"d8a2a78f-7e5a-2ae5-08c2-cc9c47f33148",
+				"e869be98-132e-c933-6f4a-8dfcf551c2e8",
+				"bd960e08-913d-f9cb-6e9b-aa04a32651b5",
+				"71786017-6761-a137-b270-668470ef026f"
+			],
+			"owner": "892326"
+		},
+		{
+			"id": "224b0aa4-d6d3-d07d-3496-123e72527bab",
+			"name": "stores",
+			"description": "",
+			"order": [
+				"0fc1abd0-1700-ee1e-0380-4ec27d4a0018",
+				"cd0e44f7-ac0e-b1e7-00ca-6bf6181debb0",
+				"cd455f10-d982-f27e-9ab9-fbf2e2d1edab"
+			],
+			"owner": "892326"
+		}
+	],
+	"timestamp": 1509138258722,
+	"owner": "892326",
+	"public": false,
+	"requests": [
+		{
+			"id": "0fc1abd0-1700-ee1e-0380-4ec27d4a0018",
+			"headers": "Content-Type: application/json\non-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/stores",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1518644748960,
+			"name": "Create a store",
+			"description": "Creates an application and a collection inside Shopify",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "{\n        \"title\": \"Toy Store\",\n        \"alias\": \"The Toy Test Store\",\n\t\t\"description\": \"Created by John\"\n}",
+			"folder": "224b0aa4-d6d3-d07d-3496-123e72527bab"
+		},
+		{
+			"id": "12c00ba9-a48b-aa0f-219b-7f0586627d81",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/products?$select=id,title,variants",
+			"queryParams": [
+				{
+					"key": "$select",
+					"value": "id,title,variants",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509387127276,
+			"name": "Get All Product - name, variants",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "",
+			"folder": "c4bceaf4-b78d-f934-31a1-d4d671efebd3"
+		},
+		{
+			"id": "26de773d-7ef1-3a91-7fd8-6fad7abd580d",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/products?$expand=subcategories($filter=name eq 'drinkware')&$select=id,title",
+			"queryParams": [
+				{
+					"key": "$expand",
+					"value": "subcategories($filter=name eq 'drinkware')",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "$select",
+					"value": "id,title",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509387639401,
+			"name": "Get Products $expand Subategories = drinkware & $select=id,title",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "",
+			"folder": "c4bceaf4-b78d-f934-31a1-d4d671efebd3"
+		},
+		{
+			"id": "28936910-0526-c5c0-f581-60bad90f888c",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/cartitems?$filter=user_id eq 'user1'",
+			"queryParams": [
+				{
+					"key": "$filter",
+					"value": "user_id eq 'user1'",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509143817290,
+			"name": "Get Cart for (User + App) Combo",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "",
+			"folder": "c4bceaf4-b78d-f934-31a1-d4d671efebd3"
+		},
+		{
+			"id": "5be7a927-6e4d-203e-7876-34e7e32c987d",
+			"headers": "Content-Type: application/json\non-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/orders",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509471050388,
+			"name": "Place an Order",
+			"description": "Create order with Pending status",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "{\n\t\"email\": \"johndoe@sample.com\",\n\t\"first_name\": \"John\",\n\t\"last_name\": \"Doe\",\n\t\"phone\": \"+13334567999\",\n\t\"addresses\": [{\n\t\t\"address1\": \"123 Broadway Ave.\",\n\t\t\"address2\": \"Apt. 808\",\n\t\t\"city\": \"SF\",\n\t\t\"zip\": \"95050\"\n\t}]\n}",
+			"folder": "9f304423-a21f-df0e-bf5e-f898b22d898b"
+		},
+		{
+			"id": "5cce554b-a7ad-1f72-f57c-46b4e55f1e96",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/categories?$filter=name eq 'office-supplies'&$expand=products",
+			"queryParams": [
+				{
+					"key": "$filter",
+					"value": "name eq 'office-supplies'",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "$expand",
+					"value": "products",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509386983775,
+			"name": "Get Categories & Products",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "",
+			"folder": "c4bceaf4-b78d-f934-31a1-d4d671efebd3"
+		},
+		{
+			"id": "603b58ea-0e06-5a59-afbc-60d5156d2fd7",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/categories",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509387017765,
+			"name": "Get All Categories",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "",
+			"folder": "faf4ff70-f108-527a-61ff-7e2f809019cd"
+		},
+		{
+			"id": "6474fa9a-445f-c2b0-8585-59a411214cba",
+			"headers": "Content-Type: application/json\non-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/cartitems/123",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PATCH",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1518644614170,
+			"name": "Update Cartitem Quantity",
+			"description": "Update a product item quantity in cart",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "{\n\t\"quantity\": 3\n}",
+			"folder": "983d651a-c736-bf09-a75a-4ede6e7ae14d"
+		},
+		{
+			"id": "68c2011f-ad2a-e4c3-a98c-db7fc1acc925",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/stores(123)?$expand=products",
+			"queryParams": [
+				{
+					"key": "$expand",
+					"value": "products",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1518644711901,
+			"name": "Get Products By StoreId",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "",
+			"folder": "faf4ff70-f108-527a-61ff-7e2f809019cd"
+		},
+		{
+			"id": "6e1b755d-3ad9-2945-6896-73f393a4c07c",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/orders/456",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1518644681650,
+			"name": "Get Order By ID",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "",
+			"folder": "9f304423-a21f-df0e-bf5e-f898b22d898b"
+		},
+		{
+			"id": "7020c612-6ef5-384b-35dd-95c4d9ac6e3b",
+			"headers": "",
+			"headerData": [],
+			"url": "{{host-url}}/api/v1/shopping/ping",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509148102132,
+			"name": "0. Ping",
+			"description": "Health Check",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": []
+		},
+		{
+			"id": "71786017-6761-a137-b270-668470ef026f",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/webhooks/123",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1518644727416,
+			"name": "DELETE webhook",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"folder": "ee296c06-be20-29fc-4baf-b0a4038682e6"
+		},
+		{
+			"id": "7315e363-b53f-5412-befa-fe2b4c05838a",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/cartitems?$filter=user_id eq 'user1'&$expand=product($select=id,title,variants)",
+			"queryParams": [
+				{
+					"key": "$filter",
+					"value": "user_id eq 'user1'",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "$expand",
+					"value": "product($select=id,title,variants)",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509143938835,
+			"name": "Get Cart with Product Details",
+			"description": "Get all cart items along with Product details for that user + app combination. Projection on product details to id,title,variants only.",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "",
+			"folder": "983d651a-c736-bf09-a75a-4ede6e7ae14d"
+		},
+		{
+			"id": "77c26bc0-2a2a-4f04-15f7-326469f54922",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/products",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509146160484,
+			"name": "Get All Products",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "",
+			"folder": "faf4ff70-f108-527a-61ff-7e2f809019cd"
+		},
+		{
+			"id": "7c5c3446-3de2-8fec-5b8e-904478ec27d6",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/cartitems",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1510022154747,
+			"name": "Get CartItems for user",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"folder": "983d651a-c736-bf09-a75a-4ede6e7ae14d"
+		},
+		{
+			"id": "9d3d0ab5-4953-4c65-e275-c7717dc31e33",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/cartitems/123",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1518644617849,
+			"name": "Delete CartItem",
+			"description": "Delete an existing cart item",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "",
+			"folder": "983d651a-c736-bf09-a75a-4ede6e7ae14d"
+		},
+		{
+			"id": "a13d904b-e008-06e5-1576-157792416a2d",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/orders",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1518644411915,
+			"name": "Get Orders for User",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"folder": "9f304423-a21f-df0e-bf5e-f898b22d898b"
+		},
+		{
+			"id": "acb0de60-7743-5345-c01e-f9153f866d75",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/customers?$select=id,email,first_name,last_name,phone,user_id",
+			"queryParams": [
+				{
+					"key": "$select",
+					"value": "id,email,first_name,last_name,phone,user_id",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509387046903,
+			"name": "/customers?$select=id,email,first_name,last_name,phone",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "",
+			"folder": "c4bceaf4-b78d-f934-31a1-d4d671efebd3"
+		},
+		{
+			"id": "bc3f8540-de44-f852-7f40-5b68a9819e2f",
+			"headers": "Content-Type: application/json\nx-api-key: {{x-api-key}}\non-behalf-of-user: {{on-behalf-of-user}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/cartitems",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1518644600873,
+			"name": "Add CartItem",
+			"description": "Add product item to cart",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "{\n\t\"store_id\": 1,\n\t\"prod_id\": 2,\n\t\"variant_id\": 3,\n\t\"quantity\": 4,\n\t\"currency\": \"USD\"\n}",
+			"folder": "983d651a-c736-bf09-a75a-4ede6e7ae14d"
+		},
+		{
+			"id": "bd960e08-913d-f9cb-6e9b-aa04a32651b5",
+			"headers": "Content-Type: application/json\nx-api-key: {{x-api-key}}\non-behalf-of-user: {{on-behalf-of-user}}\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/webhooks",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1518561973446,
+			"name": "Register a webhook on shopify",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "{\n    \"entity\": \"products\",\n    \"event\": \"create\"\n}",
+			"folder": "ee296c06-be20-29fc-4baf-b0a4038682e6"
+		},
+		{
+			"id": "c1397b27-94b9-8574-4105-59ff06c21508",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/stores?$expand=products($orderby=id desc),categories($orderby=id desc)",
+			"queryParams": [
+				{
+					"key": "$expand",
+					"value": "products($orderby=id desc),categories($orderby=id desc)",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509386854757,
+			"name": "/stores?$expand=products($orderby=id desc),categories($orderby=id desc)",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "",
+			"folder": "c4bceaf4-b78d-f934-31a1-d4d671efebd3"
+		},
+		{
+			"id": "c3acf071-86f2-6027-24ac-05e2fcc1f23d",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/categories?$expand=products($select=id,title)&$filter=name eq 'drinkware'",
+			"queryParams": [
+				{
+					"key": "$expand",
+					"value": "products($select=id,title)",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "$filter",
+					"value": "name eq 'drinkware'",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509387668817,
+			"name": "Get Products of a particular Sub-Category",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "",
+			"folder": "c4bceaf4-b78d-f934-31a1-d4d671efebd3"
+		},
+		{
+			"id": "cc8ec3f3-458d-21aa-133d-63a1bcde3927",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/categories?$filter=id ne 501&$expand=products($orderby=id desc),subcategories($orderby=id desc)",
+			"queryParams": [
+				{
+					"key": "$filter",
+					"value": "id ne 501",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "$expand",
+					"value": "products($orderby=id desc),subcategories($orderby=id desc)",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509387782910,
+			"name": "/categories?$filter=id ne 501&$expand=products($orderby=id desc),subcategories($orderby=id desc)",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "",
+			"folder": "c4bceaf4-b78d-f934-31a1-d4d671efebd3"
+		},
+		{
+			"id": "cd0e44f7-ac0e-b1e7-00ca-6bf6181debb0",
+			"name": "Update a store copy",
+			"description": "Update an existing store and collection inside Shopify",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"method": "PUT",
+			"headers": "Content-Type: application/json\nx-access-token: {{x-access-token}}\nx-api-key: {{x-api-key}}",
+			"dataMode": "raw",
+			"data": [],
+			"rawModeData": "{\n        \"title\": \"GenAir_BlueSky\",\n        \"alias\": \"The Blue Sky Store new alias\",\n\t\t\"description\": \"GenAir App's Inflight BlueSky Store new description.\"\n}",
+			"url": "https://innovation-platform-dev.herokuapp.com/api/v1/stores/377384594",
+			"responses": [],
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": ""
+				},
+				{
+					"key": "x-access-token",
+					"value": "{{x-access-token}}",
+					"description": ""
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": ""
+				}
+			],
+			"folder": "224b0aa4-d6d3-d07d-3496-123e72527bab",
+			"preRequestScript": "",
+			"tests": ""
+		},
+		{
+			"id": "cd31b3a2-0bd7-4cfc-d1e1-0860b656a8ed",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/products?$expand=subcategories",
+			"queryParams": [
+				{
+					"key": "$expand",
+					"value": "subcategories",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509387168314,
+			"name": "Get Products $expand Subategories",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "",
+			"folder": "c4bceaf4-b78d-f934-31a1-d4d671efebd3"
+		},
+		{
+			"id": "cd455f10-d982-f27e-9ab9-fbf2e2d1edab",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/stores",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509141559580,
+			"name": "Get all Stores",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "",
+			"folder": "224b0aa4-d6d3-d07d-3496-123e72527bab"
+		},
+		{
+			"id": "d5d9fb46-baed-8eae-1603-0190ce2549a5",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/products?$expand=categories",
+			"queryParams": [
+				{
+					"key": "$expand",
+					"value": "categories",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509387149899,
+			"name": "Get Products $expand Categories",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "",
+			"folder": "c4bceaf4-b78d-f934-31a1-d4d671efebd3"
+		},
+		{
+			"id": "d8a2a78f-7e5a-2ae5-08c2-cc9c47f33148",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/webhooks",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509386239493,
+			"name": "GET all webhooks",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"folder": "ee296c06-be20-29fc-4baf-b0a4038682e6"
+		},
+		{
+			"id": "dc6a2cf4-dfb4-b73c-2ea5-b7548f7b9de0",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/orders/345/fulfillments",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1518644704757,
+			"name": "Fulfill Order",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "{\n\t\"tracking_number\": \"AA2QT\"\n}",
+			"folder": "9f304423-a21f-df0e-bf5e-f898b22d898b"
+		},
+		{
+			"id": "e869be98-132e-c933-6f4a-8dfcf551c2e8",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/webhooks?entity=products&event=delete",
+			"queryParams": [
+				{
+					"key": "entity",
+					"value": "products",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "event",
+					"value": "delete",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1509386247440,
+			"name": "GET webhooks for a topic",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"folder": "ee296c06-be20-29fc-4baf-b0a4038682e6"
+		},
+		{
+			"id": "fc5417e4-7c46-9e2a-4178-950fb32d6fd7",
+			"headers": "on-behalf-of-user: {{on-behalf-of-user}}\nx-api-key: {{x-api-key}}\n",
+			"headerData": [
+				{
+					"key": "on-behalf-of-user",
+					"value": "{{on-behalf-of-user}}",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "x-api-key",
+					"value": "{{x-api-key}}",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host-url}}/api/v1/shopping/stores(123)?$expand=products",
+			"queryParams": [
+				{
+					"key": "$expand",
+					"value": "products",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1518644653186,
+			"name": "Get Products By StoreId",
+			"description": "",
+			"collectionId": "b87c89ad-5f79-30c9-336c-7592907da2b9",
+			"responses": [],
+			"rawModeData": "",
+			"folder": "c4bceaf4-b78d-f934-31a1-d4d671efebd3"
+		}
+	]
+}
